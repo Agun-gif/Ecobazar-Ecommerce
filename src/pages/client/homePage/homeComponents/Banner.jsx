@@ -44,7 +44,7 @@ const Banner = () => {
                     <SwiperSlide key={index}>
                         <div className="flex flex-col-reverse lg:flex-row gap-y-8 lg:gap-x-20 bg-gray-200 h-full items-center px-5 lg:px-10 mt-6 pb-16">
                             <div className="lg:w-1/2">
-                                <img className="w-full max-h-96 object-contain" src={slide.img} alt={slide.title} />
+                                <img className="w-full max-h-96 " src={slide.img} alt={slide.title} />
                             </div>
                             <div className="lg:w-1/2 text-center lg:text-left">
                                 <p className="text-2xl lg:text-4xl text-green-500">{slide.title}</p>
