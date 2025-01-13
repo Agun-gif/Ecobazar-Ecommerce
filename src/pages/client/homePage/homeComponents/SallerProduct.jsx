@@ -113,6 +113,11 @@ const SallerProduct = () => {
             </div>
             {/* Best Seller Product End */}
             {/* Hot Deals Start */}
+            <div className='flex'>
+                <p className='text-3xl ml-28 mt-10'>Hot Deals</p>
+                <p className='text-3xl ml-[250px] mt-10'>Best Seller</p>
+                <p className='text-3xl ml-[250px] mt-10'>Top Rated</p>
+            </div>
             <div className="grid grid-cols-2 mt-0 md:grid-cols-4 gap-6 m-[5%]">
                 <div className=' grid grid-rows-3  gap-4 mt-10'>
                     <div className=''>

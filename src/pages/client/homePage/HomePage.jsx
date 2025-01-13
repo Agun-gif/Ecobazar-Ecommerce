@@ -9,6 +9,8 @@ import OfferBanner from './homeComponents/OfferBanner'
 import SallerProduct from './homeComponents/SallerProduct'
 import LatestNews from './homeComponents/LatestNews'
 import Customer from './homeComponents/Customer'
+import CompanyLogo from './homeComponents/CompanyLogo'
+import Contact from './homeComponents/Contact'
 
 
 const HomePage = () => {
@@ -24,6 +26,8 @@ const HomePage = () => {
       <SallerProduct/>
       <LatestNews/>
       <Customer/>
+      <CompanyLogo/>
+      <Contact/>
     </div>
   )
 }

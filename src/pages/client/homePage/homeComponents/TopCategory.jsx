@@ -3,7 +3,7 @@ import React from 'react'
 const TopCategory = () => {
     return (
         <div>
-            <p className='text-4xl font-bold ml-48'>Shop by Top Categories</p>
+            <p className='text-4xl font-bold ml-48 mt-32'>Shop by Top Categories</p>
             <div className='grid grid-cols-3 mx-2 md:flex justify-center gap-16 mt-10'>
                 <div className='border border-gray-200 w-56'>
                     <div className='justify-items-center'>
