@@ -13,6 +13,7 @@ import CompanyLogo from './homeComponents/CompanyLogo'
 import Contact from './homeComponents/Contact'
 
 
+
 const HomePage = () => {
   return (
     <div>
@@ -28,6 +29,7 @@ const HomePage = () => {
       <Customer/>
       <CompanyLogo/>
       <Contact/>
+     
     </div>
   )
 }

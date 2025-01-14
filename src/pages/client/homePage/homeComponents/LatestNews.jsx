@@ -7,9 +7,9 @@ import { FaRegMessage } from "react-icons/fa6";
 const LatestNews = () => {
     return (
         <div>
-            <p className='text-2xl -mt-[45%] ml-[50%] text-green-600 '>Blog</p>
-            <p className='text-5xl  ml-[45%] font-bold'>Latest News</p>
-            <div className='flex gap-20 justify-center mt-6'>
+            <p className=' text-xl text-center md:text-2xl md:-mt-[45%] md:ml-[50%] text-green-600 '>Blog</p>
+            <p className='text-2xl text-center md:text-5xl  md:ml-[45%] font-bold'>Latest News</p>
+            <div className='flex flex-wrap gap-20 justify-center mt-6'>
                 <div className='border border-black w-96 h-[310px] rounded-md'>
                     <div>
                         <img className='w-96' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736616733/la4abkhefqno3iccqrkr.png" alt="" />
