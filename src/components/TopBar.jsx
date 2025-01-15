@@ -1,23 +1,15 @@
 import React from 'react'
+import { GiSelfLove } from 'react-icons/gi';
+import { IoBagOutline } from 'react-icons/io5';
 
-const Contact = () => {
+const TopBar = () => {
     return (
         <div>
-            <div className='flex flex-wrap justify-center gap-20 my-6'>
-                <div className='border border-gray-200 w-96 p-4'>
-                    <img className='w-32' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736794030/zqci4wac6xjfauphh7uo.png" alt="" />
-                    <p className='text-2xl font-bold'>Our Location</p>
-                    <p className='text-xl'>1901 Thornridge Cir. Shiloh, Washington DC 20020, United States</p>
+            <div className='md:flex justify-between items-center px-32 py-2'>
+                <div>
+                    <p className='text-2xl'>Ecobazar</p>
                 </div>
-                <div className='border border-gray-200 w-96 p-4'>
-                    <img className='w-32' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736794031/kcgokscrkyqtuk5go03k.png" alt="" />
-                    <p className='text-2xl font-bold'>Call Us 24/7</p>
-                    <p className='text-4xl pt-4'>+880 1953698922</p>
-                </div>
-                <div className='border border-gray-200 w-[600px] m-4 p-4'>
-                    <img className='w-32' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736794031/g9esesaj7k10zs2yke8y.png" alt="" />
-                    <p className='text-2xl font-bold m-4'>Subscribe Newsletter</p>
-
+                <div>
                     <form className="max-w-md mx-auto">
                         <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                         <div className="relative">
@@ -25,12 +17,14 @@ const Contact = () => {
                             <button type="submit" className="text-white absolute ml-[330px] md:ml-[320px] bottom-2  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
                         </div>
                     </form>
-
                 </div>
-
+                <div className="flex space-x-4  md:mt-0">
+                    <GiSelfLove className="w-6 h-6 md:w-8 md:h-8 cursor-pointer" />
+                    <IoBagOutline className="w-6 h-6 md:w-8 md:h-8 cursor-pointer" />
+                </div>
             </div>
         </div>
     )
 }
 
-export default Contact
+export default TopBar

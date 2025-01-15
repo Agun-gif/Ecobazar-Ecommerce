@@ -6,7 +6,8 @@ import TopCategory from './homeComponents/TopCategory'
 import Trusted from './homeComponents/Trusted'
 import Rating from './homeComponents/Rating'
 import OfferBanner from './homeComponents/OfferBanner'
-import SallerProduct from './homeComponents/SallerProduct'
+import BestSallerProduct from './homeComponents/BestSallerProduct'
+import Seller from './homeComponents/Seller'
 import LatestNews from './homeComponents/LatestNews'
 import Customer from './homeComponents/Customer'
 import CompanyLogo from './homeComponents/CompanyLogo'
@@ -24,7 +25,8 @@ const HomePage = () => {
       <Trusted/>
       <Rating/>
       <OfferBanner/>
-      <SallerProduct/>
+      <BestSallerProduct/>
+      <Seller/>
       <LatestNews/>
       <Customer/>
       <CompanyLogo/>

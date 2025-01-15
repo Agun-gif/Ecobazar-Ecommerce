@@ -3,7 +3,7 @@ import { FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='bg-black w-full md:w-full  h-72 md:h-96'>
+        <div className='bg-black w-full md:w-full px-10  '>
             <div className='flex space-x-10 md:space-x-32 '>
                 <div className='mt-14 md:mt-16'>
                     <p className='text-white text-lg md:text-6xl ml-10 md:ml-72 font-bold'>Ecobazar</p>

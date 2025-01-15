@@ -3,11 +3,11 @@ import React from 'react'
 const Customer = () => {
     return (
         <div>
-            <div>
-                <p></p>
-                <p></p>
+            <div className='pl-20 pt-4 md:pl-24 md:pt-8'>
+                <p className='text-3xl text-green-500'>Testimonial</p>
+                <p className='text-4xl md:text-5xl font-bold'>What Our Customer Says</p>
             </div>
-            <div className='flex flex-wrap gap-20 ml-20 md:ml-36'>
+            <div className='flex flex-wrap gap-28 ml-20 md:ml-24'>
                 <div className='border border-gray-500 w-[400px] mt-10'>
                     <div>
                         <img className='ml-4 mt-4' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736618800/x0gga0jtvjpojcjoukzc.png" alt="" />

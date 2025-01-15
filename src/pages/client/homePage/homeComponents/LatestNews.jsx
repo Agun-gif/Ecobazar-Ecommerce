@@ -1,71 +1,68 @@
 import React from 'react'
-import { PiBowlFoodFill } from "react-icons/pi";
+import { MdOutlineDiscount } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { FaRegMessage } from "react-icons/fa6";
+import { BiMessageAlt } from "react-icons/bi";
+
+
 
 
 const LatestNews = () => {
     return (
         <div>
-            <p className=' text-xl text-center md:text-2xl md:-mt-[45%] md:ml-[50%] text-green-600 '>Blog</p>
-            <p className='text-2xl text-center md:text-5xl  md:ml-[45%] font-bold'>Latest News</p>
-            <div className='flex flex-wrap gap-20 justify-center mt-6'>
-                <div className='border border-black w-96 h-[310px] rounded-md'>
+            <div className='text-center md:text-center py-6 md:'>
+                <p className='text-2xl text-green-500'>Blog</p>
+                <p className='text-6xl'>Latest News</p>
+            </div>
+            <div className='grid grid-cols-1 px-36 md:grid-cols-4 gap-20 md:px-28 '>
+                <div className='border border-gray-400 rounded-lg w-96'>
                     <div>
                         <img className='w-96' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736616733/la4abkhefqno3iccqrkr.png" alt="" />
                     </div>
-                    <div className='flex justify-center'>
-                    <PiBowlFoodFill className='w-20' />
-                    <CgProfile className='w-20' />
-                    <FaRegMessage className='w-20' />
+                    <div className='flex gap-4 items-center p-4'>
+                        <MdOutlineDiscount />Food
+                        <CgProfile />By Admin
+                        <BiMessageAlt />65 Comments
                     </div>
-                    <div>
-                        <p className='text-xl ml-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
-                    </div>
-                    <button className='text-xl mt-4 ml-4'>Read More</button>
+                    <p className='p-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                    <button className='text-2xl p-4'>Read More</button>
                 </div>
-                <div className='border border-black w-96 h-[310px] rounded-md'>
+                <div className='border border-gray-400 rounded-lg w-96'>
                     <div>
                         <img className='w-96' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736616733/la4abkhefqno3iccqrkr.png" alt="" />
                     </div>
-                    <div className='flex justify-center'>
-                    <PiBowlFoodFill className='w-20' />
-                    <CgProfile className='w-20' />
-                    <FaRegMessage className='w-20' />
+                    <div className='flex gap-4 items-center p-4'>
+                        <MdOutlineDiscount />Food
+                        <CgProfile />By Admin
+                        <BiMessageAlt />65 Comments
                     </div>
-                    <div>
-                        <p className='text-xl ml-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
-                    </div>
-                    <button className='text-xl mt-4 ml-4'>Read More</button>
+                    <p className='p-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                    <button className='text-2xl p-4'>Read More</button>
                 </div>
-                <div className='border border-black w-96 h-[310px] rounded-md'>
+                <div className='border border-gray-400 rounded-lg w-96'>
                     <div>
                         <img className='w-96' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736616733/la4abkhefqno3iccqrkr.png" alt="" />
                     </div>
-                    <div className='flex justify-center'>
-                    <PiBowlFoodFill className='w-20' />
-                    <CgProfile className='w-20' />
-                    <FaRegMessage className='w-20' />
+                    <div className='flex gap-4 items-center p-4'>
+                        <MdOutlineDiscount />Food
+                        <CgProfile />By Admin
+                        <BiMessageAlt />65 Comments
                     </div>
-                    <div>
-                        <p className='text-xl ml-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
-                    </div>
-                    <button className='text-xl mt-4 ml-4'>Read More</button>
+                    <p className='p-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                    <button className='text-2xl p-4'>Read More</button>
                 </div>
-                <div className='border border-black w-96 h-[310px] rounded-md'>
+                <div className='border border-gray-400 rounded-lg w-96'>
                     <div>
                         <img className='w-96' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736616733/la4abkhefqno3iccqrkr.png" alt="" />
                     </div>
-                    <div className='flex justify-center'>
-                    <PiBowlFoodFill className='w-20' />
-                    <CgProfile className='w-20' />
-                    <FaRegMessage className='w-20' />
+                    <div className='flex gap-4 items-center p-4'>
+                        <MdOutlineDiscount />Food
+                        <CgProfile />By Admin
+                        <BiMessageAlt />65 Comments
                     </div>
-                    <div>
-                        <p className='text-xl ml-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
-                    </div>
-                    <button className='text-xl mt-4 ml-4'>Read More</button>
+                    <p className='p-4'>Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+                    <button className='text-2xl p-4'>Read More</button>
                 </div>
+               
             </div>
         </div>
     )
