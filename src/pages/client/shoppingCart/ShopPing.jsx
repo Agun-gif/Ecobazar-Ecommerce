@@ -1,9 +1,12 @@
 import React from 'react'
+import Banner from './shoppingcartcomponents/Banner'
+import MyProductcart from './shoppingcartcomponents/MyProductcart'
 
 const ShopPing = () => {
   return (
     <div>
-      This is a Shopping
+     <Banner/>
+     <MyProductcart/>
     </div>
   )
 }
