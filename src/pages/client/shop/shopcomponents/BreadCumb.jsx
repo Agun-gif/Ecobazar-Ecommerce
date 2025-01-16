@@ -5,7 +5,7 @@ import { FaAngleRight } from "react-icons/fa";
 const BreadCumb = () => {
     return (
         <div>
-            <div className='flex ml-32'>
+            <div className='flex  md:ml-32'>
                 <button><MdOutlineHome className='text-2xl hover:text-green-600' /></button>
                 <FaAngleRight className='text-2xl'/>
                 <button><p className='hover:text-green-600'>Categories</p></button>
