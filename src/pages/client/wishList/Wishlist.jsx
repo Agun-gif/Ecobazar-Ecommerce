@@ -1,9 +1,12 @@
 import React from 'react'
+import Banner from './wishlistcomponents/Banner'
+import WishlistproDuct from './wishlistcomponents/WishlistproDuct'
 
 const Wishlist = () => {
   return (
     <div>
-      This is Wishlist
+      <Banner/>
+      <WishlistproDuct/>
     </div>
   )
 }
