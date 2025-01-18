@@ -6,25 +6,25 @@ import { NavLink } from 'react-router-dom';
 const TopBar = () => {
     return (
         <div className="bg-white shadow-md w-full">
-            <div className="flex flex-wrap items-center justify-between px-4 py-3 md:px-32">
+            <div className="flex items-center md:items-center justify-between px-4 py-3 sm:px-6 md:px-8 lg:px-32">
                 {/* Logo Section */}
-                <div>
-                    <p className="text-2xl font-bold text-gray-800">Ecobazar</p>
+                <div className="flex-1 md:flex-none">
+                    <p className="text-xl sm:text-2xl sm:items-center font-bold text-gray-800">Ecobazar</p>
                 </div>
 
                 {/* Search Bar */}
-                <div className="w-full md:w-auto mt-4 md:mt-0">
-                    <form className="relative max-w-md mx-auto">
+                <div className="w-full md:w-auto flex-1 md:flex-none mt-4 md:mt-0">
+                    <form className="relative max-w-full sm:max-w-xs md:max-w-md mx-auto">
                         <input
                             type="search"
                             id="default-search"
-                            className="w-full md:w-[500px] p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 placeholder-gray-400"
-                            placeholder="Your Gmail Address"
+                            className="w-full -mrl-50 md:w-[400px] md:-mr-[100%] p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-500 focus:border-green-500 placeholder-gray-400"
+                            placeholder="Search..."
                             required
                         />
                         <button
                             type="submit"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 -mr-52"
+                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-500 text-white hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2"
                         >
                             Search
                         </button>
@@ -33,10 +33,12 @@ const TopBar = () => {
 
                 {/* Icons Section */}
                 <div className="flex items-center space-x-4 mt-4 md:mt-0">
-                    <NavLink to="Wishlist"><GiSelfLove className="w-6 h-6 md:w-8 md:h-8 text-gray-600 hover:text-blue-700 cursor-pointer" /></NavLink>
-                    <NavLink to="ShopPing"><IoBagOutline className="w-6 h-6 md:w-8 md:h-8 text-gray-600 hover:text-blue-700 cursor-pointer" /></NavLink>
-                    
-                    
+                    <NavLink to="/wishlist">
+                        <GiSelfLove className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-gray-600 hover:text-green-600 cursor-pointer" />
+                    </NavLink>
+                    <NavLink to="/shopping">
+                        <IoBagOutline className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-gray-600 hover:text-green-600 cursor-pointer" />
+                    </NavLink>
                 </div>
             </div>
         </div>
