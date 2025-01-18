@@ -12,7 +12,7 @@ const MyProductcart = () => {
         <div>
             <p className='flex justify-center text-5xl font-bold'>My Shopping Cart</p>
             <div className='px-24'>
-                <div className='flex gap-6'>
+                <div className='grid grid-cols-2'>
                     <div className='border border-gray-300 w-[820px] m-4 rounded-lg '>
                         <div className='flex gap-60'>
                             <p className='text-2xl'>Product</p>
