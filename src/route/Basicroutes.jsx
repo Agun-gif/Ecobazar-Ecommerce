@@ -7,12 +7,12 @@ import MainLayout from "../layouts/MainLayout";
 
 
 
-const router = createBrowserRouter([
+const routers = createBrowserRouter([
     {path: "/",
         element: <MainLayout />,
         children: [
             {
-                path: "home",
+                path: "/",
                 element: <Home />,
             },
             {
@@ -32,4 +32,4 @@ const router = createBrowserRouter([
     }
 ]);
 
-export default router;
+export default routers;
