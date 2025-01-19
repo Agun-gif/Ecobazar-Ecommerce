@@ -3,11 +3,11 @@ import React from 'react'
 const seller = () => {
     return (
         <div>
-            {/* <div className='flex pl-28 '>
+            <div className='flex pl-28 '>
                 <p className='text-4xl pt-6'>Hot Deals</p>
                 <p className='text-4xl pt-6 pl-80 '>Best Sells</p>
                 <p className='text-4xl pt-6 pl-80 '>Top Rated</p>
-            </div> */}
+            </div> 
             <div className='grid grid-cols-2 md:grid-cols-4 gap-8 p-8 md:px-28'>
                 {/* Hot Deals Start */}
                 <div>

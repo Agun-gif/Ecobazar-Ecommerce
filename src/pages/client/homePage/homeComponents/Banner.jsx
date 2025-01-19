@@ -1,56 +1,68 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'Swiper/react';
-import 'Swiper/css';
-import 'Swiper/css/navigation';
-import 'Swiper/css/pagination';
-import { Navigation, Pagination, Autoplay } from 'Swiper/modules';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Banner = () => {
     const slides = [
         {
             img: "https://res.cloudinary.com/da43e0ikj/image/upload/v1736443726/s4uk9j1gzefa0kpchhw9.png",
-            title: "Welcome to shopery",
+            title: "Welcome to Shopery",
             subtitle: "Fresh & Healthy Organic Food",
             discount: "Sale up to 30% OFF",
-            description: "Free shipping on all your order. We deliver, you enjoy.",
+            description: "Free shipping on all your orders. We deliver, you enjoy.",
         },
         {
             img: "https://res.cloudinary.com/da43e0ikj/image/upload/v1736519548/ipbdknhtrnle3ao3thlu.png",
-            title: "Welcome to shopery",
+            title: "Welcome to Shopery",
             subtitle: "Fresh & Healthy Organic Food",
             discount: "Sale up to 30% OFF",
-            description: "Free shipping on all your order. We deliver, you enjoy.",
+            description: "Free shipping on all your orders. We deliver, you enjoy.",
         },
         {
             img: "https://res.cloudinary.com/da43e0ikj/image/upload/v1736519046/t2o50k1eutzpt0iscrzx.png",
-            title: "Welcome to shopery",
+            title: "Welcome to Shopery",
             subtitle: "Fresh & Healthy Organic Food",
             discount: "Sale up to 30% OFF",
-            description: "Free shipping on all your order. We deliver, you enjoy.",
+            description: "Free shipping on all your orders. We deliver, you enjoy.",
         },
     ];
 
     return (
-        <div>
+        <div className="w-full">
             <Swiper
-                modules={[ Pagination, Autoplay]}
-                // navigation
+                modules={[Pagination, Autoplay]}
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 3000 }}
                 loop
-                className="h-[500px]"
+                className="h-[400px] md:h-[500px]"
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
-                        <div className="flex flex-col-reverse lg:flex-row gap-y-8 lg:gap-x-20 bg-gray-200 h-full items-center px-5 lg:px-10 mt-6 pb-16">
-                            <div className="lg:w-1/2">
-                                <img className="w-full max-h-96 " src={slide.img} alt={slide.title} />
+                        <div className="flex flex-col lg:flex-row items-center justify-between bg-gray-100 h-full px-6 lg:px-12 py-8">
+                            {/* Image Section */}
+                            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+                                <img
+                                    className="w-full max-h-60 md:max-h-80 lg:max-h-[400px] object-contain"
+                                    src={slide.img}
+                                    alt={slide.title}
+                                />
                             </div>
-                            <div className="lg:w-1/2 text-center lg:text-left">
-                                <p className="text-2xl lg:text-4xl text-green-500">{slide.title}</p>
-                                <p className="text-4xl lg:text-8xl font-bold">{slide.subtitle}</p>
-                                <p className="text-2xl lg:text-6xl py-4">{slide.discount}</p>
-                                <p className="text-lg lg:text-3xl py-4">{slide.description}</p>
+                            {/* Text Section */}
+                            <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4 lg:space-y-6">
+                                <p className="text-lg md:text-xl lg:text-2xl text-green-500">
+                                    {slide.title}
+                                </p>
+                                <p className="text-2xl md:text-4xl lg:text-6xl font-bold">
+                                    {slide.subtitle}
+                                </p>
+                                <p className="text-xl md:text-3xl lg:text-5xl text-gray-800">
+                                    {slide.discount}
+                                </p>
+                                <p className="text-sm md:text-lg lg:text-2xl text-gray-600">
+                                    {slide.description}
+                                </p>
                             </div>
                         </div>
                     </SwiperSlide>

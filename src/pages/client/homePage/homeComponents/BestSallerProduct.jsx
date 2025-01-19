@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SallerProduct = () => {
+const BestSallerProduct = () => {
     return (
         <div>
             {/* Best Seller Product Start */}
@@ -116,4 +116,4 @@ const SallerProduct = () => {
     )
 }
 
-export default SallerProduct
+export default BestSallerProduct

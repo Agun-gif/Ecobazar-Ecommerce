@@ -1,51 +1,64 @@
-import React from 'react'
-import { FaFacebook } from 'react-icons/fa';
+import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='bg-black w-full md:w-full px-10  '>
-            <div className='flex space-x-10 md:space-x-32 '>
-                <div className='mt-14 md:mt-16'>
-                    <p className='text-white text-lg md:text-6xl ml-10 md:ml-72 font-bold'>Ecobazar</p>
-                    <p className='text-white text-xs md:text-lg ml-10 md:ml-72 mt-3 md:mt-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Ab, doloremque? Totam, quam natus? Impedit tempore<br />repellendus dolorum dolorem libero</p>
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <FaFacebook className='' />
+        <div className="bg-black w-full px-6 md:px-10 py-10">
+            <div className="flex flex-col md:flex-row justify-between space-y-10 md:space-y-0">
+                {/* Brand Section */}
+                <div className="text-center md:text-left">
+                    <p className="text-white text-2xl md:text-4xl font-bold">Ecobazar</p>
+                    <p className="text-gray-400 text-sm md:text-lg mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, doloremque? Totam, quam natus? Impedit tempore
+                        repellendus dolorum dolorem libero.
+                    </p>
+                    <div className="flex justify-center md:justify-start space-x-4 mt-6">
+                        <FaFacebook className="text-white text-xl cursor-pointer hover:text-gray-400" />
+                        <FaTwitter className="text-white text-xl cursor-pointer hover:text-gray-400" />
+                        <FaInstagram className="text-white text-xl cursor-pointer hover:text-gray-400" />
+                        <FaLinkedin className="text-white text-xl cursor-pointer hover:text-gray-400" />
+                    </div>
                 </div>
-                <div className='flex grid-cols-3 space-x-10 md:space-x-32 mt-14 md:mt-16'>
-                    <div className=''>
-                        <p className='text-white text-lg md:text-3xl md:font-semibold hover:underline'>Account</p>
-                        <ul>
-                            <li className='text-white text-xs md:text-lg mt-4 md:mt-10 '>My Account</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Order History</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Shopping Cart</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Wishlist</li>
+
+                {/* Links Section */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-16">
+                    {/* Account Links */}
+                    <div>
+                        <p className="text-white text-lg md:text-2xl font-semibold hover:underline">Account</p>
+                        <ul className="mt-4 space-y-2">
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">My Account</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Order History</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Shopping Cart</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Wishlist</li>
                         </ul>
                     </div>
+
+                    {/* Help Links */}
                     <div>
-                        <p className='text-white text-lg md:text-3xl font-semibold hover:underline'>Helps</p>
-                        <ul>
-                            <li className='text-white text-xs md:text-lg mt-4 md:mt-10 '>Contact</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Faqs</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Terms & Condition</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Privacy Policy</li>
+                        <p className="text-white text-lg md:text-2xl font-semibold hover:underline">Helps</p>
+                        <ul className="mt-4 space-y-2">
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Contact</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">FAQs</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Terms & Conditions</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Privacy Policy</li>
                         </ul>
                     </div>
+
+                    {/* Proxy Links */}
                     <div>
-                        <p className='text-white text-lg md:text-3xl font-semibold hover:underline'>Proxy</p>
-                        <ul>
-                            <li className='text-white text-xs md:text-lg mt-4 md:mt-10'>About</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Shop</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Product</li>
-                            <li className='text-white text-xs md:text-lg  mt-2 md:mt-4 '>Track Order</li>
+                        <p className="text-white text-lg md:text-2xl font-semibold hover:underline">Proxy</p>
+                        <ul className="mt-4 space-y-2">
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">About</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Shop</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Product</li>
+                            <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">Track Order</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
