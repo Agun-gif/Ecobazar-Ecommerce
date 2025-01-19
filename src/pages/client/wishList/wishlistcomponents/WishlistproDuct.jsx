@@ -45,7 +45,8 @@ const WishlistproDuct = () => {
                             {/* Stock Status */}
                             <div className="md:w-1/4 text-center">
                                 <p
-                                    className={`px-4 py-2 rounded-full text-sm font-medium ${index === 2 ? 'bg-red-200 text-red-700' : 'bg-green-200 text-green-700'}`}
+                                    className={`px-4 py-2 rounded-full text-sm font-medium ${index === 2 ? 'bg-red-200 text-red-700' : 'bg-green-200 text-green-700'
+                                        }`}
                                 >
                                     {index === 2 ? 'Out of Stock' : 'In Stock'}
                                 </p>
@@ -62,10 +63,10 @@ const WishlistproDuct = () => {
                                 <RxCrossCircled className="text-2xl text-gray-500 hover:text-red-500 cursor-pointer" />
                             </div>
                         </div>
+
                     ))}
-                    
                     {/* Share Section */}
-                    <div className="flex flex-wrap gap-4 m-4">
+                    <div className="flex flex-rows m-4 gap-4">
                         <p className="text-xl font-medium">Share:</p>
                         <div className="flex gap-4">
                             <TiSocialFacebook className="text-3xl md:text-4xl bg-green-500 text-white p-2 rounded-full" />
@@ -76,6 +77,8 @@ const WishlistproDuct = () => {
                     </div>
                 </div>
             </div>
+
+
 
             {/* Newsletter Section */}
             <div className="mt-12 bg-gray-100 py-6">

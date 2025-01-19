@@ -116,4 +116,4 @@ const BestSallerProduct = () => {
     )
 }
 
-export default BestSallerProduct
+export default SallerProduct
