@@ -4,6 +4,7 @@ import { CiPhone, CiSearch } from "react-icons/ci";
 import { GiSelfLove } from "react-icons/gi";
 import { IoBagOutline } from "react-icons/io5";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { CgProfile } from "react-icons/cg";
 
 const ResponsiveNavBar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -50,14 +51,24 @@ const ResponsiveNavBar = () => {
                     >
                         About Us
                     </NavLink>
+                    <NavLink
+                        to="contactus"
+                        className="text-gray-700 font-medium hover:text-green-600"
+                    >
+                        Contact Us
+                    </NavLink>
                 </nav>
 
                 {/* Desktop Icons */}
                 <div className="hidden md:flex space-x-6 items-center">
                     <CiPhone className="w-6 h-6 cursor-pointer hover:text-green-600" />
                     <CiSearch className="w-6 h-6 cursor-pointer hover:text-green-600" />
-                    <GiSelfLove className="w-6 h-6 cursor-pointer hover:text-green-600" />
-                    <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />
+                    <NavLink to ="/wishlist" ><GiSelfLove className="w-6 h-6 cursor-pointer hover:text-green-600" /></NavLink>
+                    <NavLink to ="/shopping" ><IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" /></NavLink>
+                    <NavLink to= "signin"><CgProfile className="w-6 h-6 cursor-pointer hover:text-green-600" /></NavLink>
+                    
+                    
+                   
                 </div>
 
                 {/* Hamburger Menu for Mobile */}

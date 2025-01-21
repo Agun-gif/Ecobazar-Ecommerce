@@ -6,6 +6,7 @@ import Wishlist from "../pages/client/wishList/Wishlist.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
+import Signin from "../pages/client/signin/SignIn.jsx";
 
 const routers = createBrowserRouter([
     {
@@ -17,7 +18,9 @@ const routers = createBrowserRouter([
             { path: "shopping", element: <Shopping /> },
             { path: "wishlist", element: <Wishlist /> },
             { path: "productDetails", element: <ProductDetails /> },
-            { path: "chekout", element: <Checkout /> },
+            { path: "checkout", element: <Checkout /> },
+            { path: "signin", element: <Signin /> },
+            
         ],
     },
 ]);
