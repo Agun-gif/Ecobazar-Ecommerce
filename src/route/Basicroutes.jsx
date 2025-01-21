@@ -6,7 +6,10 @@ import Wishlist from "../pages/client/wishList/Wishlist.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
-import Signin from "../pages/client/signin/SignIn.jsx";
+
+import Signin from "../pages/client/signin/siginComponents/SignIn.jsx";
+import Register from "../pages/client/signin/SiginComponents/Register.jsx";
+
 
 const routers = createBrowserRouter([
     {
@@ -20,6 +23,7 @@ const routers = createBrowserRouter([
             { path: "productDetails", element: <ProductDetails /> },
             { path: "checkout", element: <Checkout /> },
             { path: "signin", element: <Signin /> },
+            { path: "register", element: <Register /> },
             
         ],
     },
