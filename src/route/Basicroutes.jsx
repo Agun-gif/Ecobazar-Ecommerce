@@ -9,6 +9,8 @@ import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
 
 import Signin from "../pages/client/signin/siginComponents/SignIn.jsx";
 import Register from "../pages/client/signin/SiginComponents/Register.jsx";
+import ContactUs from "../pages/client/contact/contactcomponents/ContactUs.jsx";
+import UserDashboard from "../pages/client/userDasboard/UserDashboard,.jsx";
 
 
 const routers = createBrowserRouter([
@@ -24,6 +26,8 @@ const routers = createBrowserRouter([
             { path: "checkout", element: <Checkout /> },
             { path: "signin", element: <Signin /> },
             { path: "register", element: <Register /> },
+            { path: "Contactus", element: <ContactUs /> },
+            { path: "userdashboard", element: <UserDashboard /> },
             
         ],
     },

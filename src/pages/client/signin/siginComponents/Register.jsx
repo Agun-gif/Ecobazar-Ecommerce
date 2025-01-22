@@ -103,7 +103,7 @@ function Register() {
               <p className="text-sm text-gray-600">
                Already have account{" "}
                 <a
-                  href="#"
+                  href="signin"
                   className="text-blue-500 font-medium hover:underline"
                 >
                   Login
