@@ -6,11 +6,15 @@ import Wishlist from "../pages/client/wishList/Wishlist.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
-
 import Signin from "../pages/client/signin/siginComponents/SignIn.jsx";
 import Register from "../pages/client/signin/SiginComponents/Register.jsx";
 import ContactUs from "../pages/client/contact/contactcomponents/ContactUs.jsx";
-import UserDashboard from "../pages/client/userDasboard/UserDashboard,.jsx";
+
+import Faqs from "../pages/client/faqs/Faqs.jsx";
+import UserDashboard from "../pages/client/userDasboard/user.jsx";
+import Eror from "../pages/client/eror/Eror.jsx";
+
+
 
 
 const routers = createBrowserRouter([
@@ -28,6 +32,8 @@ const routers = createBrowserRouter([
             { path: "register", element: <Register /> },
             { path: "Contactus", element: <ContactUs /> },
             { path: "userdashboard", element: <UserDashboard /> },
+            { path: "faqs", element: <Faqs/> },
+            { path: "eror", element: <Eror/> },
             
         ],
     },

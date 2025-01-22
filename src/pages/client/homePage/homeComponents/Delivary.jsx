@@ -4,7 +4,7 @@ import React from 'react'
 const Delivary = () => {
     return (
         <div>
-            <div className="flex justify-center md:gap-36 mt-8 md:mt-16 ">
+            <div className="grid grid-cols-2 p-4 md:flex justify-center md:gap-36 mt-8 md:mt-16 ">
                 {[
                     {
                         imgSrc:
