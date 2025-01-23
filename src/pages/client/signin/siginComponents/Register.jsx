@@ -56,7 +56,7 @@ function Register() {
                 htmlFor="confirmpassword"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-               Confirm Password
+                Confirm Password
               </label>
               <input
                 type="password"
@@ -101,13 +101,21 @@ function Register() {
             {/* Register Link */}
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-600">
-               Already have account{" "}
+                Already have account{" "}
                 <a
                   href="signin"
                   className="text-blue-500 font-medium hover:underline"
                 >
                   Login
                 </a>
+                <button>
+                  <a
+                    href="UserDashBoard"
+                    className="text-blue-500 font-medium hover:underline"
+                  >
+                    UserDashBoard
+                  </a>
+                </button>
               </p>
             </div>
           </form>
