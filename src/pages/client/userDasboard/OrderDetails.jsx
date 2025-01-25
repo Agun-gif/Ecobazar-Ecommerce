@@ -131,7 +131,7 @@ const OrderDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-10">
+            <div className="flex flex-col md:flex-row gap-10 overflow-x-auto">
               <div className="">
                 <div className="flex gap-2 p-2 mt-4 bg-gray-200">
                   <p className="text-xl md:text-2xl ml-4">Product</p>

@@ -35,12 +35,10 @@ const DashboardNav = () => {
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <BsHandbag className="w-6 h-6" />
             <NavLink to ="/shopping"><p className="text-lg">Shopping Cart</p></NavLink>
-            
-           
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <CiSettings className="w-6 h-6" />
-            <p className="text-lg">Settings</p>
+            <NavLink to ="/ProfileSatting"><p className="text-lg">Settings</p></NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <CiLogin className="w-6 h-6" />

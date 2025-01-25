@@ -14,6 +14,7 @@ import UserDashboard from "../pages/client/userDasboard/user.jsx";
 import Eror from "../pages/client/eror/Eror.jsx";
 import OrderHistory from "../pages/client/userDasboard/OrderHistory.jsx";
 import OrderDetails from "../pages/client/userDasboard/OrderDetails.jsx";
+import ProfileSatting from "../pages/client/userDasboard/ProfileSatting.jsx";
 
 
 
@@ -35,6 +36,7 @@ const routers = createBrowserRouter([
             { path: "userdashboard", element: <UserDashboard /> },
             { path: "orderhistory", element: <OrderHistory/> },
             { path: "orderdetails", element: <OrderDetails/> },
+            { path: "profilesatting", element: <ProfileSatting/> },
             { path: "faqs", element: <Faqs/> },
             { path: "eror", element: <Eror/> },
             
