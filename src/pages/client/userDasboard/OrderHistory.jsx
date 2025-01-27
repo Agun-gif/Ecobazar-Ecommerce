@@ -46,7 +46,6 @@ function OrderHistory() {
           </div>
         </div>
       </div>
-
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">

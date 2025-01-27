@@ -11,7 +11,7 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                      <a href="Product"><p className='text-2xl ml-2'>Green Apple</p></a>
+                      <a href="ProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
                     </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>

@@ -7,7 +7,16 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 
 const ResponsiveNavBar = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // For mobile menu
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For profile dropdown
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
 
   return (
     <div className="bg-gray-200 py-2 md:py-4 relative">
@@ -21,40 +30,19 @@ const ResponsiveNavBar = () => {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex space-x-8">
-          <NavLink
-            to="home"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
+          <NavLink to="home" className="text-gray-700 font-medium hover:text-green-600">
             Home
           </NavLink>
-          <NavLink
-            to="shop"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
+          <NavLink to="shop" className="text-gray-700 font-medium hover:text-green-600">
             Shop
           </NavLink>
-          <NavLink
-            to="pages"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
-            Pages
-          </NavLink>
-          <NavLink
-            to="blog"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
+          <NavLink to="Blogs" className="text-gray-700 font-medium hover:text-green-600">
             Blog
           </NavLink>
-          <NavLink
-            to="aboutus"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
+          <NavLink to="aboutus" className="text-gray-700 font-medium hover:text-green-600">
             About Us
           </NavLink>
-          <NavLink
-            to="contactus"
-            className="text-gray-700 font-medium hover:text-green-600"
-          >
+          <NavLink to="contactus" className="text-gray-700 font-medium hover:text-green-600">
             Contact Us
           </NavLink>
         </nav>
@@ -69,11 +57,38 @@ const ResponsiveNavBar = () => {
             <GiSelfLove className="w-6 h-6 cursor-pointer hover:text-green-600" />
           </NavLink>
           <NavLink to="/shopping">
-            <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />
+            <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />                              
           </NavLink>
-          <NavLink to="signin">
-            <CgProfile className="w-6 h-6 cursor-pointer hover:text-green-600" />
-          </NavLink>
+          <div className="relative">
+            {/* Profile Icon */}
+            <button onClick={toggleDropdown}>
+              <CgProfile className="w-6 h-6 cursor-pointer hover:text-green-600" />
+            </button>
+
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <ul
+                className="absolute right-0 mt-2 p-2 shadow menu bg-white border border-gray-300 rounded-lg w-52"
+                onMouseLeave={closeDropdown} // Optional: Close dropdown when mouse leaves
+              >
+                <li>
+                  <NavLink to="/SignIn" className="block px-4 py-2 hover:bg-gray-100">
+                    SignIn
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/UserDashboard" className="block px-4 py-2 hover:bg-gray-100">
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/Register" className="block px-4 py-2 hover:bg-gray-100">
+                    Register
+                  </NavLink>
+                </li>
+              </ul>
+            )}
+          </div>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -98,48 +113,30 @@ const ResponsiveNavBar = () => {
       >
         <ul className="flex flex-col space-y-4 p-4">
           <li>
-            <NavLink
-              to="home"
-              className="block text-gray-700 py-2 hover:text-green-600"
-            >
+            <NavLink to="home" className="block text-gray-700 py-2 hover:text-green-600">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="shop"
-              className="block text-gray-700 py-2 hover:text-green-600"
-            >
+            <NavLink to="shop" className="block text-gray-700 py-2 hover:text-green-600">
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="pages"
-              className="block text-gray-700 py-2 hover:text-green-600"
-            >
+            <NavLink to="pages" className="block text-gray-700 py-2 hover:text-green-600">
               Pages
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="blog"
-              className="block text-gray-700 py-2 hover:text-green-600"
-            >
+            <NavLink to="blog" className="block text-gray-700 py-2 hover:text-green-600">
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="aboutus"
-              className="block text-gray-700 py-2 hover:text-green-600"
-            >
+            <NavLink to="aboutus" className="block text-gray-700 py-2 hover:text-green-600">
               About Us
             </NavLink>
-            <NavLink
-              to="contactus"
-              className="block text-gray-700 py- hover:text-green-600"
-            >
+            <NavLink to="contactus" className="block text-gray-700 py- hover:text-green-600">
               Contact Us
             </NavLink>
           </li>

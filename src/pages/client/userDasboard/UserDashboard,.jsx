@@ -3,6 +3,8 @@ import User from './user';
 import OrderHistory from './OrderHistory';
 import OrderHistory from './OrderHistory';
 import ProfileSatting from './ProfileSatting';
+import WishLists from './WishLists';
+import ShoppingCarts from './ShoppingCarts';
 
 function UserDashboard() {
   return (
@@ -11,6 +13,8 @@ function UserDashboard() {
       <OrderHistory/>
       <OrderDetails/>
       <ProfileSatting/>
+      <WishLists/>
+      <ShoppingCarts/>
     </div>
   );
 }

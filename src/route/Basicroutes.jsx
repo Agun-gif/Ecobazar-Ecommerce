@@ -15,6 +15,9 @@ import Eror from "../pages/client/eror/Eror.jsx";
 import OrderHistory from "../pages/client/userDasboard/OrderHistory.jsx";
 import OrderDetails from "../pages/client/userDasboard/OrderDetails.jsx";
 import ProfileSatting from "../pages/client/userDasboard/ProfileSatting.jsx";
+import WishLists from "../pages/client/userDasboard/WishLists.jsx";
+import ShoppingCarts from "../pages/client/userDasboard/ShoppingCarts.jsx";
+import Blogs from "../pages/client/pages/Blogs.jsx";
 
 
 
@@ -37,6 +40,9 @@ const routers = createBrowserRouter([
             { path: "orderhistory", element: <OrderHistory/> },
             { path: "orderdetails", element: <OrderDetails/> },
             { path: "profilesatting", element: <ProfileSatting/> },
+            { path: "wishlists", element: <WishLists/> },
+            { path: "ShoppingCarts", element: <ShoppingCarts/> },
+            { path: "Blogs", element: <Blogs/> },
             { path: "faqs", element: <Faqs/> },
             { path: "eror", element: <Eror/> },
             
