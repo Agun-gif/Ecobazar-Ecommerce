@@ -11,13 +11,19 @@ import Register from "../pages/client/signin/SiginComponents/Register.jsx";
 import ContactUs from "../pages/client/contact/contactcomponents/ContactUs.jsx";
 import Faqs from "../pages/client/faqs/Faqs.jsx";
 import UserDashboard from "../pages/client/userDasboard/user.jsx";
-import Eror from "../pages/client/eror/Eror.jsx";
 import OrderHistory from "../pages/client/userDasboard/OrderHistory.jsx";
 import OrderDetails from "../pages/client/userDasboard/OrderDetails.jsx";
 import ProfileSatting from "../pages/client/userDasboard/ProfileSatting.jsx";
 import WishLists from "../pages/client/userDasboard/WishLists.jsx";
 import ShoppingCarts from "../pages/client/userDasboard/ShoppingCarts.jsx";
-import Blogs from "../pages/client/pages/Blogs.jsx";
+import Blog from "../pages/client/Blog/Blog.jsx";
+import Eror from "../pages/client/eror/Eror.jsx";
+import SingleBlog from "../pages/client/Blog/SingleBlog.jsx";
+import Additional from "../pages/client/product/productcomponents/Additional.jsx";
+import CustomerFeedback from "../pages/client/product/productcomponents/CustomerFeedback.jsx";
+
+
+
 
 
 
@@ -27,11 +33,13 @@ const routers = createBrowserRouter([
         path: "/",
         element: <MainLayout />,
         children: [
-            { path: "home", element: <Home /> },
+            { path: "Home", element: <Home /> },
             { path: "shop", element: <Shop /> },
             { path: "shopping", element: <Shopping /> },
             { path: "wishlist", element: <Wishlist /> },
             { path: "productDetails", element: <ProductDetails /> },
+            { path: "additional", element: <Additional /> },
+            { path: "customerfeedback", element: <CustomerFeedback /> },
             { path: "checkout", element: <Checkout /> },
             { path: "signin", element: <Signin /> },
             { path: "register", element: <Register /> },
@@ -42,9 +50,10 @@ const routers = createBrowserRouter([
             { path: "profilesatting", element: <ProfileSatting/> },
             { path: "wishlists", element: <WishLists/> },
             { path: "ShoppingCarts", element: <ShoppingCarts/> },
-            { path: "Blogs", element: <Blogs/> },
+            { path:"Blog", element: <Blog/>},
+            { path:"SingleBlog", element: <SingleBlog/>},
             { path: "faqs", element: <Faqs/> },
-            { path: "eror", element: <Eror/> },
+            { path: "Eror", element: <Eror/> },
             
         ],
     },

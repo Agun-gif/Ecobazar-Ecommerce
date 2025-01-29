@@ -3,7 +3,7 @@ import BlogList from './BlogList';
 import SingleBlog from './SingleBlog';
 
 
-function Blogs() {
+function Blog() {
   return (
     <div>
      <BlogList/>
@@ -12,4 +12,4 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export default Blog;

@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Description = () => {
   return (
     <div>
-      <div></div>
       <div className='flex justify-center gap-32 mt-20'>
-        <p className='text-xl font-bold hover:text-green-400'>Descriptions</p>
-        <p className='text-xl font-bold hover:text-green-400'>Additional Information</p>
-        <p className='text-xl font-bold hover:text-green-400'>Customer Feedback</p>
+      <Link to = "/Description"><p className='text-xl font-bold hover:text-green-400'>Descriptions</p></Link>
+      <Link to = "/additional"><p className='text-xl font-bold hover:text-green-400'>Additional Information</p></Link>
+      <Link to = "/CustomerFeedback"><p className='text-xl font-bold hover:text-green-400'>Customer Feedback</p></Link>
       </div>
       <div className='border border-gray-400 my-6'></div>
       <div className='container mx-auto max-w-[1100px]'>

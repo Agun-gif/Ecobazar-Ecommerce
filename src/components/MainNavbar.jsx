@@ -36,7 +36,10 @@ const ResponsiveNavBar = () => {
           <NavLink to="shop" className="text-gray-700 font-medium hover:text-green-600">
             Shop
           </NavLink>
-          <NavLink to="Blogs" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink to="ProductDetails" className="text-gray-700 font-medium hover:text-green-600">
+            Pages
+          </NavLink>
+          <NavLink to="Blog" className="text-gray-700 font-medium hover:text-green-600">
             Blog
           </NavLink>
           <NavLink to="aboutus" className="text-gray-700 font-medium hover:text-green-600">
