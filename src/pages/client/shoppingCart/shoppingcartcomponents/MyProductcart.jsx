@@ -1,7 +1,6 @@
 import React from "react";
 import { CiCircleMinus } from "react-icons/ci";
 import { CiCirclePlus } from "react-icons/ci";
-import { RxCrossCircled } from "react-icons/rx";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";

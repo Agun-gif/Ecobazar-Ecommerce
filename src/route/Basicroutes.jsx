@@ -21,6 +21,8 @@ import Eror from "../pages/client/eror/Eror.jsx";
 import SingleBlog from "../pages/client/Blog/SingleBlog.jsx";
 import Additional from "../pages/client/product/productcomponents/Additional.jsx";
 import CustomerFeedback from "../pages/client/product/productcomponents/CustomerFeedback.jsx";
+import AboutUs from "../pages/client/aboutus/AboutUs.jsx";
+
 
 
 
@@ -43,6 +45,7 @@ const routers = createBrowserRouter([
             { path: "checkout", element: <Checkout /> },
             { path: "signin", element: <Signin /> },
             { path: "register", element: <Register /> },
+            {path : "aboutus", element: <AboutUs/>},
             { path: "Contactus", element: <ContactUs /> },
             { path: "userdashboard", element: <UserDashboard /> },
             { path: "orderhistory", element: <OrderHistory/> },
