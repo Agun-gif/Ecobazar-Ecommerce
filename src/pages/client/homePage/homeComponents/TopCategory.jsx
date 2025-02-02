@@ -4,7 +4,7 @@ const TopCategory = () => {
     return (
         <div>
             <p className='text-4xl font-bold pl-[70px] md:pl-48 mt-32'>Shop by Top Categories</p>
-            <div className='grid grid-cols-1 md:grid-cols-6 p-20 mx-2 md:flex justify-center gap-8  md:gap-16 pt-10'>
+            <div className='grid grid-cols-2 px-6 md:grid-cols-6  mx-2 gap-8  md:gap-16 pt-10'>
                 <div className='border border-gray-200 w-56'>
                     <div className='justify-items-center'>
                         <img className='w-32 mt-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736534363/Group_robd6j.png" alt="" />

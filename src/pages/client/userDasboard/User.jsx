@@ -1,10 +1,11 @@
 import React from "react";
-
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 import DashboardNav from "./DashboardNav";
+import { Link } from "react-router-dom";
+
 
 function UserDashboard() {
   return (
@@ -26,7 +27,10 @@ function UserDashboard() {
                 />
                 <p className="text-xl font-bold mt-4">Dennis Nzioki</p>
                 <p className="text-gray-500 text-sm">Customer</p>
+                <Link to ="/ProfileSatting">
                 <button className="text-green-500 mt-2">Edit Profile</button>
+                </Link>
+                
               </div>
             </div>
 
@@ -42,9 +46,11 @@ function UserDashboard() {
                   dennisnzioki@gmail.com
                 </p>
                 <p className="text-md text-gray-600 mt-2">254 555-0110</p>
-                <button className="text-green-500 hover:text-green-400 mt-4">
+                <Link to ="/ProfileSatting"><button className="text-green-500 hover:text-green-400 mt-4">
                   Edit Address
                 </button>
+                </Link>
+                
               </div>
             </div>
             {/* Table Section */}
