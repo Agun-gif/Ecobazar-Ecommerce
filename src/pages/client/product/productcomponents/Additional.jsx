@@ -14,7 +14,7 @@ function Additional() {
       <div>
         <div>
           <img
-            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1737047024/Portfolio%20Image/is7l0ij8sodgwnlgklvv.png"
+            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1738695449/yk3erypbo7reln6m6bes.png"
             alt=""
           />
         </div>
@@ -185,38 +185,28 @@ function Additional() {
         <div className="container mx-auto max-w-[1100px] px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {/* Left Side */}
-            <div>
-              <p className="text-sm sm:text-base">
-                Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
-                at posuere ac, viverra at mauris...
-              </p>
-              <br />
-              <p className="text-sm sm:text-base">
-                Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui.
-                Sed iaculis, metus faucibus elementum...
-              </p>
-
-              <div className="my-10">
-                {[
-                  "100 g of fresh leaves provides.",
-                  "Aliquam ac est at augue volutpat elementum.",
-                  "Quisque nec enim eget sapien molestie.",
-                  "Proin convallis odio volutpat finibus posuere.",
-                ].map((text, index) => (
-                  <div key={index} className="flex items-center gap-2 my-2">
-                    <img
-                      className="w-5 h-5 bg-green-400 rounded-full"
-                      src="https://res.cloudinary.com/da43e0ikj/image/upload/v1737278474/dtdv6xtgxhymthlggl6q.png"
-                      alt=""
-                    />
-                    <p className="text-sm sm:text-base">{text}</p>
-                  </div>
-                ))}
-                <p className="text-sm sm:text-base">
-                  Cras et diam maximus, accumsan sapien et, sollicitudin
-                  velit...
-                </p>
+            <div className="flex flex-col space-y-6 text-gray-800">
+              <span>
+                <strong>Weight:</strong> 03
+              </span>
+              <span>
+                <strong>Color:</strong> Green
+              </span>
+              <span>
+                <strong>Type:</strong> Organic
+              </span>
+              <div className="flex flex-row items-center space-x-2">
+                <strong>Stock Status:</strong>
+                <span>Available</span>
+                <span className="text-gray-500">(5,113)</span>
               </div>
+              <span>
+                <strong>Tags:</strong> Vegetables, Healthy,{" "}
+                <strong>
+                  <u>Chinese</u>
+                </strong>
+                , Cabbage, Green Cabbage
+              </span>
             </div>
 
             {/* Right Side */}

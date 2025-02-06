@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/client/homePage/Home.jsx";
 import Shop from "../pages/client/shop/Shop.jsx";
-import Shopping from "../pages/client/shoppingcart/ShopPing.jsx";
-import Wishlist from "../pages/client/wishList/Wishlist.jsx";
+import ShopPing from "../pages/client/shoppingCart/shoppingcartcomponents/ShopPing.jsx";
 import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
@@ -22,6 +21,9 @@ import SingleBlog from "../pages/client/Blog/SingleBlog.jsx";
 import Additional from "../pages/client/product/productcomponents/Additional.jsx";
 import CustomerFeedback from "../pages/client/product/productcomponents/CustomerFeedback.jsx";
 import AboutUs from "../pages/client/aboutus/AboutUs.jsx";
+import Description from "../pages/client/product/productcomponents/Description.jsx";
+import Wishlist from "../pages/client/wishList/wishlistcomponents/Wishlist.jsx";
+
 
 
 
@@ -37,9 +39,10 @@ const routers = createBrowserRouter([
         children: [
             { path: "Home", element: <Home /> },
             { path: "shop", element: <Shop /> },
-            { path: "shopping", element: <Shopping /> },
-            { path: "wishlist", element: <Wishlist /> },
-            { path: "productDetails", element: <ProductDetails /> },
+            { path: "shopping", element: <ShopPing/> },
+            { path: "wishlist", element: <Wishlist/> },
+            { path: "productDetails", element: <ProductDetails/> },
+            { path: "description", element: <Description /> },
             { path: "additional", element: <Additional /> },
             { path: "customerfeedback", element: <CustomerFeedback /> },
             { path: "checkout", element: <Checkout /> },

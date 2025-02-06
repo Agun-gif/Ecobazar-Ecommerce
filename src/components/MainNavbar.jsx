@@ -19,7 +19,7 @@ const ResponsiveNavBar = () => {
   };
 
   return (
-    <div className="bg-gray-200 py-2 md:py-4 relative">
+    <div className="bg-gray-300 py-2 md:py-4 relative">
       <div className="flex items-center justify-between px-4 md:px-[10%]">
         {/* Logo */}
         <div className="text-lg font-bold">
@@ -30,22 +30,40 @@ const ResponsiveNavBar = () => {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden md:flex space-x-8">
-          <NavLink to="home" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="home"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             Home
           </NavLink>
-          <NavLink to="shop" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="shop"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             Shop
           </NavLink>
-          <NavLink to="ProductDetails" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="ProductDetails"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             Pages
           </NavLink>
-          <NavLink to="Blog" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="Blog"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             Blog
           </NavLink>
-          <NavLink to="AboutUs" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="AboutUs"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             About Us
           </NavLink>
-          <NavLink to="contactus" className="text-gray-700 font-medium hover:text-green-600">
+          <NavLink
+            to="contactus"
+            className="text-gray-700 font-medium hover:text-green-600"
+          >
             Contact Us
           </NavLink>
         </nav>
@@ -60,32 +78,41 @@ const ResponsiveNavBar = () => {
             <GiSelfLove className="w-6 h-6 cursor-pointer hover:text-green-600" />
           </NavLink>
           <NavLink to="/shopping">
-            <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />                              
+            <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />
           </NavLink>
-          <div className="relative">
+          <div className="relative pt-2">
             {/* Profile Icon */}
-            <button onClick={toggleDropdown}>
+            <button onClick={toggleDropdown} className="relative">
               <CgProfile className="w-6 h-6 cursor-pointer hover:text-green-600" />
             </button>
 
             {/* Dropdown Menu */}
             {isDropdownOpen && (
               <ul
-                className="absolute right-0 mt-2 p-2 shadow menu bg-white border border-gray-300 rounded-lg w-52"
+                className="absolute right-0 top-full mt-2 p-2 shadow-lg bg-white border border-gray-300 rounded-lg w-52 z-50"
                 onMouseLeave={closeDropdown} // Optional: Close dropdown when mouse leaves
               >
                 <li>
-                  <NavLink to="/SignIn" className="block px-4 py-2 hover:bg-gray-100">
+                  <NavLink
+                    to="/SignIn"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     SignIn
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/UserDashboard" className="block px-4 py-2 hover:bg-gray-100">
+                  <NavLink
+                    to="/UserDashboard"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     Dashboard
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Register" className="block px-4 py-2 hover:bg-gray-100">
+                  <NavLink
+                    to="/Register"
+                    className="block px-4 py-2 hover:bg-gray-100"
+                  >
                     Register
                   </NavLink>
                 </li>
@@ -93,7 +120,6 @@ const ResponsiveNavBar = () => {
             )}
           </div>
         </div>
-
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
@@ -116,30 +142,48 @@ const ResponsiveNavBar = () => {
       >
         <ul className="flex flex-col space-y-4 p-4">
           <li>
-            <NavLink to="home" className="block text-gray-700 py-2 hover:text-green-600">
+            <NavLink
+              to="home"
+              className="block text-gray-700 py-2 hover:text-green-600"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="shop" className="block text-gray-700 py-2 hover:text-green-600">
+            <NavLink
+              to="shop"
+              className="block text-gray-700 py-2 hover:text-green-600"
+            >
               Shop
             </NavLink>
           </li>
           <li>
-            <NavLink to="ProductDetails" className="block text-gray-700 py-2 hover:text-green-600">
+            <NavLink
+              to="ProductDetails"
+              className="block text-gray-700 py-2 hover:text-green-600"
+            >
               Pages
             </NavLink>
           </li>
           <li>
-            <NavLink to="blog" className="block text-gray-700 py-2 hover:text-green-600">
+            <NavLink
+              to="blog"
+              className="block text-gray-700 py-2 hover:text-green-600"
+            >
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink to="aboutus" className="block text-gray-700 py-2 hover:text-green-600">
+            <NavLink
+              to="aboutus"
+              className="block text-gray-700 py-2 hover:text-green-600"
+            >
               About Us
             </NavLink>
-            <NavLink to="contactus" className="block text-gray-700 py- hover:text-green-600">
+            <NavLink
+              to="contactus"
+              className="block text-gray-700 py- hover:text-green-600"
+            >
               Contact Us
             </NavLink>
           </li>

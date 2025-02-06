@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from './wishlistcomponents/Banner'
-import WishlistproDuct from './wishlistcomponents/WishlistproDuct'
+import Banner from './Banner'
+import WishlistproDuct from './WishlistproDuct'
 
 const Wishlist = () => {
   return (

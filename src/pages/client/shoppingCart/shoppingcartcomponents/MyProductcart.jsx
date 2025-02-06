@@ -35,7 +35,7 @@ const MyProductcart = () => {
                   <p className="text-lg">Green Capsicum</p>
                 </div>
                 <p className="text-lg">$14.00</p>
-                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-32 rounded-full">
+                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-28 rounded-full">
                   <CiCircleMinus className="text-xl cursor-pointer" />
                   <p className="text-lg mx-2">5</p>
                   <CiCirclePlus className="text-xl cursor-pointer" />
@@ -55,7 +55,7 @@ const MyProductcart = () => {
                   <p className="text-lg">Green Capsicum</p>
                 </div>
                 <p className="text-lg">$14.00</p>
-                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-32 rounded-full">
+                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-28 rounded-full">
                   <CiCircleMinus className="text-xl cursor-pointer" />
                   <p className="text-lg mx-2">5</p>
                   <CiCirclePlus className="text-xl cursor-pointer" />
@@ -75,7 +75,7 @@ const MyProductcart = () => {
                   <p className="text-lg">Green Capsicum</p>
                 </div>
                 <p className="text-lg">$14.00</p>
-                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-32 rounded-full">
+                <div className="flex justify-center items-center border border-gray-300 h-8 w-20 ml-24 md:ml-28 rounded-full">
                   <CiCircleMinus className="text-xl cursor-pointer" />
                   <p className="text-lg mx-2">5</p>
                   <CiCirclePlus className="text-xl cursor-pointer" />
