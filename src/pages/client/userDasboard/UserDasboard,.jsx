@@ -6,7 +6,7 @@ import ProfileSatting from './ProfileSatting';
 import WishLists from './WishLists';
 import ShoppingCarts from './ShoppingCarts';
 
-function UserDashboard() {
+function UserDasboard() {
   return (
     <div>
       <User/>
@@ -19,4 +19,4 @@ function UserDashboard() {
   );
 }
 
-export default UserDashboard;
+export default UserDasboard;

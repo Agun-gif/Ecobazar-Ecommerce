@@ -8,45 +8,41 @@ import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-function Additional() {
+function Description() {
   return (
     <div>
       <div>
-        <div className="relative text-white bg-black">
-          {/* Overlay for better text visibility */}
-          <div className="absolute inset-0 bg-black/60"></div>
+      <div className="relative text-white bg-black">
+        {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="flex items-center py-4">
-              <span className="text-white">
-                <a href="/" className="hover:text-green-500">
-                  🏠 Home
-                </a>{" "}
-                &gt;
-              </span>
-              <span className="ml-2 text-white hover:text-green-500">
-                Category
-              </span>
-              <span className="ml-2">/</span>
-              <span className="ml-2 text-white hover:text-green-500">
-                Vegetables
-              </span>
-              <span className="ml-2">/</span>
-              <span className="ml-2 text-white hover:text-green-500">
-                Chinese Cabbage
-              </span>
-            </div>
-          </div>
-
-          {/* Image Background */}
-          <div className="absolute top-0 right-0 h-full w-full">
-            <img
-              src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736576188/zk6w1zrglnhbbbduzptz.png"
-              alt="Privacy Policy Banner"
-              className="h-full w-full object-cover"
-            />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center py-4">
+            <span className="text-white">
+              <a href="/" className="hover:text-green-500">
+                🏠 Home
+              </a>{" "}
+              &gt;
+            </span>
+            <span className="ml-2 text-white hover:text-green-500">
+              Vegetables
+            </span>
+            <span className="ml-2">/</span>
+            <span className="ml-2 text-white hover:text-green-500">
+              Chainese Cabbage
+            </span>
           </div>
         </div>
+
+        {/* Image Background */}
+        <div className="absolute top-0 right-0 h-full w-full">
+          <img
+            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736576188/zk6w1zrglnhbbbduzptz.png"
+            alt="Privacy Policy Banner"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
         {/* Main Details */}
         <div className="container mx-auto max-w-[1000px] px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -193,49 +189,55 @@ function Additional() {
           </div>
         </div>
         {/* Description */}
-        <div className="flex flex-col items-center gap-8 mt-10 sm:flex-row sm:justify-center sm:gap-32">
+        <div className="flex flex-col items-center gap-8 mt-10 sm:gap-32">
           <Link to="/Description">
             <p className="text-lg sm:text-xl font-bold hover:text-green-400">
               Descriptions
             </p>
           </Link>
-          <Link to="/additional">
-            <p className="text-lg sm:text-xl font-bold hover:text-green-400">
-              Additional Information
-            </p>
-          </Link>
-          <Link to="/CustomerFeedback">
-            <p className="text-lg sm:text-xl font-bold hover:text-green-400">
-              Customer Feedback
-            </p>
-          </Link>
-        </div>
+        </div>  
         <div className="border border-gray-400 my-6"></div>
         <div className="container mx-auto max-w-[1100px] px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {/* Left Side */}
-            <div className="flex flex-col space-y-6 text-gray-800">
-              <span>
-                <strong>Weight:</strong> 03
-              </span>
-              <span>
-                <strong>Color:</strong> Green
-              </span>
-              <span>
-                <strong>Type:</strong> Organic
-              </span>
-              <div className="flex flex-row items-center space-x-2">
-                <strong>Stock Status:</strong>
-                <span>Available</span>
-                <span className="text-gray-500">(5,113)</span>
-              </div>
-              <span>
-                <strong>Tags:</strong> Vegetables, Healthy,{" "}
-                <strong>
-                  <u>Chinese</u>
-                </strong>
-                , Cabbage, Green Cabbage
-              </span>
+            <div
+              style={{
+                fontFamily: "Arial, sans-serif",
+                lineHeight: 1.6,
+                color: "#333",
+              }}
+            >
+              <p>
+                Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
+                at posuere ac, viverra at mauris. Maecenas tincidunt ligula a
+                sem vestibulum pharetra. Maecenas auctor tortor lacus, nec
+                laoreet nisl porttitor vel. Etiam tincidunt metus vel dui
+                interdum sollicitudin. Mauris sem ante, vestibulum nec orci
+                vitae, aliquam mollis lacus. Sed et condimentum orci, id
+                molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a
+                convallis. Morbi urna ipsum, placerat quis commodo quis, egestas
+                elementum leo. Donec convallis ac mi enim. Aliquam id mi quam.
+                Phasellus nec fringilla elit.
+              </p>
+
+              <p>
+                Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui.
+                Sed iaculis, metus faucibus elementum tincidunt, turpis mi
+                viverra velit, pellentesque tristique neque mi eget nulla. Proin
+                luctus elementum neque at pharetra.
+              </p>
+
+              <ul style={{ listStyle: "none", paddingLeft: 0 }}>
+                <li>✅ 100 g of fresh leaves provides.</li>
+                <li>✅ Aliquam ac est at augue volutpat elementum.</li>
+                <li>✅ Quisque nec enim eget sapien molestie.</li>
+                <li>✅ Proin convallis odio volutpat finibus posuere.</li>
+              </ul>
+
+              <p>
+                Cras et diam maximus, accumsan sapien et, sollicitudin velit.
+                Nulla blandit eros non turpis lobortis iaculis at ut massa.
+              </p>
             </div>
 
             {/* Right Side */}
@@ -369,4 +371,4 @@ function Additional() {
   );
 }
 
-export default Additional;
+export default Description;

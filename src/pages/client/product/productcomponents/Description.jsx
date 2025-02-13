@@ -12,11 +12,40 @@ function Description() {
   return (
     <div>
       <div>
-        <div>
-          <img
-            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1738695449/yk3erypbo7reln6m6bes.png"
-            alt=""
-          />
+        <div className="relative text-white bg-black">
+          {/* Overlay for better text visibility */}
+          <div className="absolute inset-0 bg-black/60"></div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="flex items-center py-4">
+              <span className="text-white">
+                <a href="/" className="hover:text-green-500">
+                  🏠 Home
+                </a>{" "}
+                &gt;
+              </span>
+              <span className="ml-2 text-white hover:text-green-500">
+                Category
+              </span>
+              <span className="ml-2">/</span>
+              <span className="ml-2 text-white hover:text-green-500">
+                Vegetables
+              </span>
+              <span className="ml-2">/</span>
+              <span className="ml-2 text-white hover:text-green-500">
+                Chinese Cabbage
+              </span>
+            </div>
+          </div>
+
+          {/* Image Background */}
+          <div className="absolute top-0 right-0 h-full w-full">
+            <img
+              src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736576188/zk6w1zrglnhbbbduzptz.png"
+              alt="Privacy Policy Banner"
+              className="h-full w-full object-cover"
+            />
+          </div>
         </div>
         {/* Main Details */}
         <div className="container mx-auto max-w-[1000px] px-4">

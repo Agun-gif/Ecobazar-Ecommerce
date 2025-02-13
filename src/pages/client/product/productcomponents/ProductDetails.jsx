@@ -1,16 +1,12 @@
 import React from 'react'
-import Description from './Description'
-import Additional from './Additional'
-import CustomerFeedback from './CustomerFeedback'
-
-
+import Products from './Products'
 
 const ProductDetails = () => {
   return (
     <div>
-      <Description/>
-      <Additional/>
-      <CustomerFeedback/>
+      
+      <Products/>
+      
     </div>
   )
 }

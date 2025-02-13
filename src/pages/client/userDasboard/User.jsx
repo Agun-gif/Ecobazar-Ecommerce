@@ -6,15 +6,41 @@ import { CiInstagram } from "react-icons/ci";
 import DashboardNav from "./DashboardNav";
 import { Link } from "react-router-dom";
 
-
 function UserDashboard() {
   return (
-    
     <div>
+      <div className="relative text-white bg-black">
+        {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center py-4">
+            <span className="text-white">
+              <a href="/" className="hover:text-green-500">
+                🏠 Home
+              </a>{" "}
+              &gt;
+            </span>
+            <span className="ml-2 text-white hover:text-green-500">
+              Dashboard
+            </span>
+           
+          </div>
+        </div>
+
+        {/* Image Background */}
+        <div className="absolute top-0 right-0 h-full w-full">
+          <img
+            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736576188/zk6w1zrglnhbbbduzptz.png"
+            alt="Privacy Policy Banner"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
       <div className="container mx-auto max-w-[1100px] mt-10 px-4">
         <div className="flex flex-col lg:flex-row lg:gap-x-10 space-y-6 lg:space-y-0">
           {/* Navigation */}
-           <DashboardNav/>
+          <DashboardNav />
           {/* Profile and Billing Address */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 space-y-6 lg:space-y-0 w-full">
             {/* Profile */}
@@ -27,10 +53,9 @@ function UserDashboard() {
                 />
                 <p className="text-xl font-bold mt-4">Dennis Nzioki</p>
                 <p className="text-gray-500 text-sm">Customer</p>
-                <Link to ="/ProfileSatting">
-                <button className="text-green-500 mt-2">Edit Profile</button>
+                <Link to="/ProfileSatting">
+                  <button className="text-green-500 mt-2">Edit Profile</button>
                 </Link>
-                
               </div>
             </div>
 
@@ -46,11 +71,11 @@ function UserDashboard() {
                   dennisnzioki@gmail.com
                 </p>
                 <p className="text-md text-gray-600 mt-2">254 555-0110</p>
-                <Link to ="/ProfileSatting"><button className="text-green-500 hover:text-green-400 mt-4">
-                  Edit Address
-                </button>
+                <Link to="/ProfileSatting">
+                  <button className="text-green-500 hover:text-green-400 mt-4">
+                    Edit Address
+                  </button>
                 </Link>
-                
               </div>
             </div>
             {/* Table Section */}

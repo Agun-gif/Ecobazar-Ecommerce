@@ -1,11 +1,16 @@
-import React from "react";
-import DashboardNav from "./DashboardNav";
+import React, { useState } from "react";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 
-function OrderHistory() {
+function PrivacyPolicy() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div>
       <div className="relative text-white bg-black">
@@ -21,9 +26,8 @@ function OrderHistory() {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              Orderhistory
+              Privacy Policy
             </span>
-            
           </div>
         </div>
 
@@ -36,44 +40,69 @@ function OrderHistory() {
           />
         </div>
       </div>
-      <div>
-        <div className="flex flex-col md:flex-row md:gap-10 md:mx-[15%] pt-10">
-          {/* Navigation */}
-          <DashboardNav />
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center p-6 md:px-80 md:py-10">
+        <div>
+          <p className="text-4xl font-bold my-6 text-center md:text-left">
+            Welcome, Let’s Talk
+            <br />
+            About Our Ecobazar
+          </p>
 
-          {/* Order History */}
-          <div className="w-full overflow-x-auto border border-gray-300 rounded-lg">
-            <div className="flex justify-between py-4 px-4">
-              <span className="text-2xl font-extrabold">Order History</span>
+          {[...Array(5)].map((_, index) => (
+            <div key={index} className="mb-4">
+              <h2>
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 font-medium text-gray-500 border border-gray-200 rounded-t-xl hover:border-green-600 gap-3"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <span className="text-lg md:text-xl">
+                    In elementum est a ante sodales iaculis.
+                  </span>
+                  <svg
+                    className={`w-3 h-3 transition-transform duration-300 ${
+                      openIndex === index ? "rotate-180" : ""
+                    }`}
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                className={`p-5 border border-b-0 border-gray-200 ${
+                  openIndex === index ? "" : "hidden"
+                }`}
+              >
+                <p className="mb-2 text-gray-500">
+                  Morbi porttitor ligula in nunc varius sagittis. Proin dui
+                  nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis
+                  ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel
+                  tellus at accumsan. Donec a eros non massa vulputate ornare.
+                  Vivamus ornare commodo ante, at commodo felis congue vitae.
+                </p>
+              </div>
             </div>
-
-            <table className="w-full border-collapse min-w-[600px]">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="py-2 px-4 text-center">ORDER ID</th>
-                  <th className="py-2 px-4 text-center">DATE</th>
-                  <th className="py-2 px-4 text-center">TOTAL</th>
-                  <th className="py-2 px-4 text-center">STATUS</th>
-                  <th className="py-2 px-4 text-center">ACTION</th>
-                </tr>
-              </thead>
-              <tbody>
-                {Array.from({ length: 14 }).map((_, index) => (
-                  <tr key={index} className="text-center border-t">
-                    <td className="py-2 px-4">738</td>
-                    <td className="py-2 px-4">8 Sep, 2024</td>
-                    <td className="py-2 px-4">$135.00 (5 Products)</td>
-                    <td className="py-2 px-4">Processing</td>
-                    <td className="py-2 px-4">
-                      <button className="text-green-500">View Details</button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          ))}
+        </div>
+        <div>
+          <img
+            className="w-[300px] mx-auto md:w-[400px] h-auto"
+            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1737570138/ambzwfdcflzayseromab.png"
+            alt=""
+          />
         </div>
       </div>
+
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
@@ -117,4 +146,4 @@ function OrderHistory() {
   );
 }
 
-export default OrderHistory;
+export default PrivacyPolicy;

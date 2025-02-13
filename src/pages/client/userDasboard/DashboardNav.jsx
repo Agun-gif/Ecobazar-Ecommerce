@@ -16,29 +16,39 @@ const DashboardNav = () => {
         <div className="space-y-6">
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <MdDashboard className="w-6 h-6" />
-            <NavLink to="/UserDashboard"><button className="text-lg">DashBoard</button></NavLink>
+            <NavLink to="/UserDashboard">
+              <button className="text-lg">DashBoard</button>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <LuRefreshCw className="w-6 h-6" />
-            <NavLink to="/OrderHistory"><button className="text-lg">Order History</button></NavLink>
+            <NavLink to="/OrderHistory">
+              <button className="text-lg">Order History</button>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
-            <BiSolidDetail  className="w-6 h-6" />
-            <NavLink to="/OrderDetails"><button className="text-lg">Order Details</button></NavLink>
+            <BiSolidDetail className="w-6 h-6" />
+            <NavLink to="/OrderDetails">
+              <button className="text-lg">Order Details</button>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <GiSelfLove className="w-6 h-6" />
-            <NavLink to = "/WishLists"><p className="text-lg">WishLists</p></NavLink>
-            
-           
+            <NavLink to="/WishLists">
+              <p className="text-lg">WishLists</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <BsHandbag className="w-6 h-6" />
-            <NavLink to ="/ShoppingCarts"><p className="text-lg">Shopping Cart</p></NavLink>
+            <NavLink to="/ShoppingCarts">
+              <p className="text-lg">Shopping Cart</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <CiSettings className="w-6 h-6" />
-            <NavLink to ="/ProfileSatting"><p className="text-lg">Settings</p></NavLink>
+            <NavLink to="/ProfileSatting">
+              <p className="text-lg">Settings</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-3 cursor-pointer hover:text-green-600">
             <CiLogin className="w-6 h-6" />

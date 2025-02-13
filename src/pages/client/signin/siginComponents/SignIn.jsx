@@ -8,6 +8,42 @@ import { Link } from "react-router-dom";
 function Signin() {
   return (
     <div>
+      <div className="relative text-white bg-black">
+        {/* Overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center py-4">
+            <span className="text-white">
+              <a href="/" className="hover:text-green-500">
+                🏠 Home
+              </a>{" "}
+              &gt;
+            </span>
+            <span className="ml-2">/</span>
+            <a href="SignIn">
+              <span className="ml-2 text-white hover:text-green-500">
+                Sign In
+              </span>
+            </a>
+            <span className="ml-2">/</span>
+            <a href="Register">
+              <span className="ml-2 text-white hover:text-green-500">
+                Register
+              </span>
+            </a>
+          </div>
+        </div>
+
+        {/* Image Background */}
+        <div className="absolute top-0 right-0 h-full w-full">
+          <img
+            src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736576188/zk6w1zrglnhbbbduzptz.png"
+            alt="Privacy Policy Banner"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
       <div className="flex items-center justify-center mt-20">
         <div className="w-full max-w-sm rounded-lg p-6 shadow-lg">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
@@ -85,8 +121,8 @@ function Signin() {
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-600">
                 Don’t have an account?{" "}
-                <Link to='/register'
-                  
+                <Link
+                  to="/register"
                   className="text-blue-500 font-medium hover:underline"
                 >
                   Register

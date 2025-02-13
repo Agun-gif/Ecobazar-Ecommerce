@@ -77,7 +77,7 @@ const ResponsiveNavBar = () => {
           <NavLink to="/wishlist">
             <GiSelfLove className="w-6 h-6 cursor-pointer hover:text-green-600" />
           </NavLink>
-          <NavLink to="/shopping">
+          <NavLink to="/Shopping">
             <IoBagOutline className="w-6 h-6 cursor-pointer hover:text-green-600" />
           </NavLink>
           <div className="relative pt-2">

@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = () => {
   return (
     <div>
-       <div className="relative text-white bg-black">
+      <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -16,8 +16,12 @@ const Banner = () => {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              Checkout
+             Category
             </span>
+            <span className="ml-2 text-white hover:text-green-500">
+              Trackorder
+            </span>
+           
           </div>
         </div>
 
@@ -35,4 +39,3 @@ const Banner = () => {
 }
 
 export default Banner
-

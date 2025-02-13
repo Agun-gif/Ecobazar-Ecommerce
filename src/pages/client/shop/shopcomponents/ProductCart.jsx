@@ -10,8 +10,8 @@ const ProductCart = () => {
             <div className='flex flex-wrap justify-center gap-16 mt-10'>
                 <div className='border border-gray-200 w-72'>
                     <div>
-                        <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                      <a href="ProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />  
+                      <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
                     </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
@@ -28,7 +28,7 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
                     </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
@@ -45,8 +45,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -62,8 +62,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -79,8 +79,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -96,8 +96,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -113,8 +113,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -130,8 +130,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -147,8 +147,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -164,8 +164,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -181,8 +181,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -198,8 +198,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -215,8 +215,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -232,8 +232,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -249,8 +249,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -266,8 +266,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -283,8 +283,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -300,8 +300,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -317,8 +317,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -334,8 +334,8 @@ const ProductCart = () => {
                 <div className='border border-gray-200 w-72'>
                     <div>
                         <img className='w-80' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736520266/v8qbojbj7hixvojgna0t.png" alt="" />
-                        <p className='text-2xl ml-2'>Green Apple</p>
-                    </div>
+                        <a href="ShopProductDetails"><p className='text-2xl ml-2'>Green Apple</p></a>
+                        </div>
                     <div className='flex justify-between'>
                         <p className='ml-2'>$14.99</p>
                         <img className='mr-2' src="https://res.cloudinary.com/da43e0ikj/image/upload/v1736530119/wwzg5bozyl06q1sop5je.png" alt="" />
@@ -366,7 +366,7 @@ const ProductCart = () => {
                                 <input
                                     type="search"
                                     id="default-search"
-                                    className="w-full md:w-[460px] lg:w-[500px] p-3 rounded-full text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                    className="w-full md:w-[460px] lg:w-[500px] p-3 rounded-full text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                     placeholder="Your Gmail Address"
                                     required
                                 />

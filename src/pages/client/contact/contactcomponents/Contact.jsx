@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactUs from './ContactUs';
 
+
 function Contact() {
   return (
     <div>

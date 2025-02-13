@@ -1,16 +1,14 @@
 import React from 'react';
-import BlogList from './BlogList';
+import Torder from './Torder';
 import Banner from './Banner';
 
-
-
-function Blog() {
+function Trackorder() {
   return (
     <div>
       <Banner/>
-     <BlogList/>
+      <Torder/>
     </div>
   );
 }
 
-export default Blog;
+export default Trackorder;
