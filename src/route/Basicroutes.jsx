@@ -7,7 +7,7 @@ import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
 import Signin from "../pages/client/signin/siginComponents/SignIn.jsx";
-import Register from "../pages/client/signin/SiginComponents/Register.jsx";
+import Register from "../pages/client/signin/siginComponents/Register.jsx";
 import ContactUs from "../pages/client/contact/contactcomponents/ContactUs.jsx";
 import Faqs from "../pages/client/faqs/Faqs.jsx";
 import UserDasboard from "../pages/client/userDasboard/user.jsx";
@@ -53,7 +53,7 @@ const routers = createBrowserRouter([
             { path: "Customerfeedback", element: <CustomerFeedback /> },
             { path: "Checkout", element: <Checkout /> },
             { path: "Signin", element: <Signin /> },
-            { path: "Register", element: <Register /> },
+            { path: "Register", element: <Register/> },
             {path : "aboutus", element: <AboutUs/>},
             { path: "Contactus", element: <ContactUs /> },
             { path: "userdasboard", element: <UserDasboard /> },
