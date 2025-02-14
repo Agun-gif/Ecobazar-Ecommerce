@@ -6,8 +6,8 @@ import ShopPing from "../pages/client/shoppingCart/shoppingcartcomponents/ShopPi
 import MainLayout from "../layouts/MainLayout.jsx";
 import ProductDetails from "../pages/client/product/productcomponents/ProductDetails.jsx";
 import Checkout from "../pages/client/checkout/checkoutcomponents/Checkout.jsx";
-import Signin from "../pages/client/signin/siginComponents/SignIn.jsx";
-import Register from "../pages/client/signin/siginComponents/Register.jsx";
+import Signin from "../pages/client/signin/signinComponents/SignIn.jsx";
+import Register from "../pages/client/signin/SigninComponents/Register";
 import ContactUs from "../pages/client/contact/contactcomponents/ContactUs.jsx";
 import Faqs from "../pages/client/faqs/Faqs.jsx";
 import UserDasboard from "../pages/client/userDasboard/user.jsx";
