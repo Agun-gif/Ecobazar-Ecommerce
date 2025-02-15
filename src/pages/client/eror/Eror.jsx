@@ -7,6 +7,7 @@ import { CiInstagram } from "react-icons/ci";
 function Eror() {
   return (
     <div>
+      {/* Banner  */}
        <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
@@ -34,6 +35,7 @@ function Eror() {
           />
         </div>
       </div>
+      {/* Erorr */}
       <div className="flex flex-col items-center py-8">
         <div className="text-center">
           <img
@@ -52,6 +54,7 @@ function Eror() {
           </button>
         </div>
       </div>
+      {/* Subscribtion  */}
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">

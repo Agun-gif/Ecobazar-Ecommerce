@@ -4,17 +4,17 @@ import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 
-function Faqs() {
-  const [openIndex, setOpenIndex] = useState(null);
+function TermsCondition() {
+  const [openIndex, setOpenIndex] = useState(null); // Initialize openIndex to track which accordion is open
 
   const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndex(openIndex === index ? null : index); // Toggle accordion visibility
   };
 
   return (
     <div>
-      {/* Banner  */}
-       <div className="relative text-white bg-black">
+      {/* Banner */}
+      <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -27,7 +27,7 @@ function Faqs() {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              Faqs
+             Terms & Condition
             </span>
           </div>
         </div>
@@ -41,10 +41,10 @@ function Faqs() {
           />
         </div>
       </div>
-      {/* Faqs */}
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center p-6 md:px-80 md:py-10">
+      {/* Terms & Condition */}
+      <div className="grid grid-cols-1 md:grid-cols-2 p-6 md:px-80 md:py-10">
         <div>
-          <p className="text-4xl font-bold my-6 text-center md:text-left">
+          <p className="text-2xl md:text-4xl font-bold my-6 text-center md:text-left">
             Welcome, Let’s Talk About Our Ecobazar
           </p>
 
@@ -60,9 +60,7 @@ function Faqs() {
                     In elementum est a ante sodales iaculis.
                   </span>
                   <svg
-                    className={`w-3 h-3 transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
+                    className={`w-3 h-3 transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""}`}
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -79,16 +77,10 @@ function Faqs() {
                 </button>
               </h2>
               <div
-                className={`p-5 border border-b-0 border-gray-200 ${
-                  openIndex === index ? "" : "hidden"
-                }`}
+                className={`p-5 border border-b-0 border-gray-200 ${openIndex === index ? "" : "hidden"}`}
               >
                 <p className="mb-2 text-gray-500">
-                  Morbi porttitor ligula in nunc varius sagittis. Proin dui
-                  nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis
-                  ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel
-                  tellus at accumsan. Donec a eros non massa vulputate ornare.
-                  Vivamus ornare commodo ante, at commodo felis congue vitae.
+                  Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros. Cras quis ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa vulputate ornare. Vivamus ornare commodo ante, at commodo felis congue vitae.
                 </p>
               </div>
             </div>
@@ -102,7 +94,7 @@ function Faqs() {
           />
         </div>
       </div>
-      {/* Subscribtion  */}
+      {/* Subscribtion */}
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
@@ -146,4 +138,4 @@ function Faqs() {
   );
 }
 
-export default Faqs;
+export default TermsCondition;

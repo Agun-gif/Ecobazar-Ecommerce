@@ -7,6 +7,7 @@ import { CiInstagram } from "react-icons/ci";
 const CheckoutDetails = () => {
   return (
     <div>
+      {/* Billings Details  */}
       <div className="container mx-auto max-w-[1100px] py-8">
         <p className="text-4xl py-4">Billing Infrmation</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -297,6 +298,7 @@ const CheckoutDetails = () => {
           </div>
         </div>
       </div>
+      {/* Subscribtipon  */}
       <div className="pt-20 ">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">

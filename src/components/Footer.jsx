@@ -30,25 +30,25 @@ const Footer = () => {
               Account
             </p>
             <ul className="mt-4 space-y-2">
-              <Link to="UserDashboard">
+              <Link to="/UserDashboard">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   My Account
                 </li>
               </Link>
 
-              <Link to="OrderHistory">
+              <Link to="/OrderHistory">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   Order History
                 </li>
               </Link>
 
-              <Link to="ShopPing">
+              <Link to="/ShopPing">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   Shopping Cart
                 </li>
               </Link>
 
-              <Link to="WishList">
+              <Link to="/WishList">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   Wishlist
                 </li>
@@ -73,12 +73,12 @@ const Footer = () => {
                   FAQs
                 </li>
               </Link>
-              <Link to="Terms">
+              <Link to="/TermsCondition">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   Terms & Conditions
                 </li>
               </Link>
-              <Link to ="PrivacyPolicy">
+              <Link to ="/PrivacyPolicy">
                 <li className="text-gray-400 text-sm md:text-lg hover:text-white cursor-pointer">
                   Privacy Policy
                 </li>

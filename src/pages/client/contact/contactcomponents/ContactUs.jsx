@@ -9,7 +9,8 @@ import { CiInstagram } from "react-icons/ci";
 function ContactUs() {
   return (
     <div>
-        <div className="relative text-white bg-black">
+      {/* Banner  */}
+      <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -36,6 +37,7 @@ function ContactUs() {
           />
         </div>
       </div>
+      {/* ContactUs  */}
       <div className="container mx-auto max-w-screen-lg px-4">
         <div className="flex flex-wrap md:flex-nowrap gap-8 mt-10">
           {/* Contact Details */}
@@ -136,6 +138,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
+      {/* Subscribtion  */}
       <div className="pt-20">
         <img
           className="mt-6"

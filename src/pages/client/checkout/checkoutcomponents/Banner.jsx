@@ -3,6 +3,7 @@ import React from 'react'
 const Banner = () => {
   return (
     <div>
+      {/* Banner  */}
        <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>

@@ -14,6 +14,7 @@ import { CiInstagram } from "react-icons/ci";
 const SingleBlog = () => {
   return (
     <div className="bg-gray-50">
+      {/* Blog Start  */}
       <div className="container mx-auto max-w-[1200px] px-4 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-4">
           {/* Blog List */}
@@ -276,7 +277,8 @@ const SingleBlog = () => {
           </div>
         </div>
       </div>
-      {/* Comment Section */}
+      {/* Blog End  */}
+      {/* Comment Section Start */}
       <div className="max-w-[720px] mx-auto md:ml-64 p-6">
         <h2 className="text-xl font-semibold mb-4">Leave a Comment</h2>
         <form action="" className="space-y-4">
@@ -345,7 +347,6 @@ const SingleBlog = () => {
           </button>
         </form>
       </div>
-
       <div>
         <p className="text-xl md:text-5xl font-bold ml-6 md:ml-[210px] py-6">Comments</p>
         <div className="space-y-4 md:ml-64">
@@ -439,7 +440,8 @@ const SingleBlog = () => {
           </button>
         </div>
       </div>
-
+      {/* Comment Section End */}
+      {/* Subscribtion  */}
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">

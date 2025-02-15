@@ -13,6 +13,7 @@ function PrivacyPolicy() {
 
   return (
     <div>
+      {/* Banner  */}
       <div className="relative text-white bg-black">
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
@@ -40,6 +41,7 @@ function PrivacyPolicy() {
           />
         </div>
       </div>
+      {/* Privacy Policy */}
       <div className="grid grid-cols-1 md:grid-cols-2 items-center p-6 md:px-80 md:py-10">
         <div>
           <p className="text-4xl font-bold my-6 text-center md:text-left">
@@ -102,7 +104,7 @@ function PrivacyPolicy() {
           />
         </div>
       </div>
-
+      {/* Subscribtion */}
       <div className="pt-20">
         <div className="flex flex-wrap justify-between items-center bg-gray-100 px-4 md:px-40 py-6">
           <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">

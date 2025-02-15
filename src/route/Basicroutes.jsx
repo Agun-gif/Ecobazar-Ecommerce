@@ -28,6 +28,7 @@ import PrivacyPolicy from "../pages/client/privecypolicy/PrivacyPolicy.jsx";
 import UserDashboard from "../pages/client/userDashboard/UserDashboard,.jsx";
 import { Suspense } from "react";
 import Products from "../pages/client/product/productcomponents/Products.jsx";
+import TermsCondition from "../pages/client/termscondition/TermsCondition.jsx";
 
 
 
@@ -71,6 +72,7 @@ const routers = createBrowserRouter([
             { path: "Eror", element: <Eror/> },
             { path: "Trackorder", element: <Trackorder/> },
             { path: "PrivacyPolicy", element: <PrivacyPolicy/> },
+            { path: "TermsCondition", element: <TermsCondition/> },
             
         ],
     },
