@@ -17,12 +17,12 @@ function Description() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="max-w-7xl mx-auto  md:px-8 relative z-10">
-          <div className="flex items-start py-4">
+          <div className="flex items-center py-4">
             <span className="text-white">
-              <a href="/" className="text-sm hover:text-green-500">
+              <a href="/" className="text-md hover:text-green-500">
                 🏠 Home
-              </a>{" "}
-              &gt;
+              </a>
+              
             </span>
             <span className=""><FaAngleRight /></span>
             <span className=" text-sm  text-white hover:text-green-500">
