@@ -20,7 +20,7 @@ const ResponsiveNavBar = () => {
 
   return (
     <div className="bg-gray-300 py-2 md:py-4 relative">
-      <div className="flex items-center justify-between px-4 md:px-[10%]">
+      <div className="flex items-center justify-between px-4 md:px-[5.5%]">
         {/* Logo */}
         <div className="text-lg font-bold">
           <NavLink to="/home" className="hover:text-green-600">

@@ -10,7 +10,7 @@ const LatestNews = () => {
                 <p className="text-2xl text-green-500">Blog</p>
                 <p className="text-4xl md:text-6xl font-bold">Latest News</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 md:px-12 lg:px-20">
+            <div className="grid grid-cols-1  md:grid-cols-4 gap-8 px-8 py-4 md:py-10 md:px-20">
                 {Array(4).fill().map((_, index) => (
                     <div key={index} className="border border-gray-300 rounded-lg shadow-md">
                         <div>

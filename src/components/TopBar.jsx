@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const TopBar = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-col md:flex-row items-center justify-between px-4 py-3 sm:px-6 md:px-8 lg:px-32 space-y-4 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center justify-between  py-3 px-6 md:px-28 space-y-4 md:space-y-0">
         {/* Logo Section */}
         <div className="flex-1 md:flex-none text-center md:text-left">
           <p className="text-xl sm:text-2xl font-bold text-gray-800">

@@ -11,7 +11,7 @@ function Register() {
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-20 md:px-8 relative z-10">
           <div className="flex items-center py-4">
             <span className="text-white">
               <a href="/" className="hover:text-green-500">
@@ -144,14 +144,6 @@ function Register() {
                 >
                   Login
                 </a>
-                <button>
-                  <a
-                    href="UserDashBoard"
-                    className="text-blue-500 font-medium hover:underline"
-                  >
-                    UserDashBoard
-                  </a>
-                </button>
               </p>
             </div>
           </form>
