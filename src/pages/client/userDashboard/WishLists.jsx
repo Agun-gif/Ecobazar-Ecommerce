@@ -19,7 +19,7 @@ function WishLists() {
             <span className="text-white">
               <a href="/" className="hover:text-green-500">
                 🏠 Home
-              </a>{" "}
+              </a>
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">

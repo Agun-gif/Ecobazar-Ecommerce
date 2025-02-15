@@ -16,6 +16,7 @@ function Banner() {
               </a>
               &gt;
             </span>
+            <span className="ml-2"><FaAngleRight /></span>
             <span className="ml-2 text-white hover:text-green-500">
               Blog
             </span>

@@ -3,7 +3,7 @@ import { GiSelfLove } from "react-icons/gi";
 import { CiCircleMinus } from "react-icons/ci";
 import { CiCirclePlus } from "react-icons/ci";
 import { TiSocialFacebook } from "react-icons/ti";
-import { FaTwitter } from "react-icons/fa6";
+import { FaAngleRight, FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 import { Link } from "react-router-dom";
@@ -16,19 +16,20 @@ function Description() {
         {/* Overlay for better text visibility */}
         <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="max-w-7xl mx-auto px-20 md:px-8 relative z-10">
-          <div className="flex items-center py-4">
+        <div className="max-w-7xl mx-auto  md:px-8 relative z-10">
+          <div className="flex items-start py-4">
             <span className="text-white">
-              <a href="/" className="hover:text-green-500">
+              <a href="/" className="text-sm hover:text-green-500">
                 🏠 Home
               </a>{" "}
               &gt;
             </span>
-            <span className="ml-2 text-white hover:text-green-500">
+            <span className=""><FaAngleRight /></span>
+            <span className=" text-sm  text-white hover:text-green-500">
               Vegetables
             </span>
-            <span className="ml-2">/</span>
-            <span className="ml-2 text-white hover:text-green-500">
+           <span className=""><FaAngleRight /></span>
+            <span className=" text-sm  text-white hover:text-green-500">
               Chainese Cabbage
             </span>
           </div>
