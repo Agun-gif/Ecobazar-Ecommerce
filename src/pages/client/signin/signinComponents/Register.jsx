@@ -3,6 +3,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
+import { FaAngleRight } from "react-icons/fa";
 
 function Register() {
   return (
@@ -19,14 +20,8 @@ function Register() {
               </a>{" "}
               &gt;
             </span>
-            <span className="ml-2">/</span>
+            <span className="ml-2"><FaAngleRight /></span>
             <a href="SignIn">
-              <span className="ml-2 text-white hover:text-green-500">
-                Sign In
-              </span>
-            </a>
-            <span className="ml-2">/</span>
-            <a href="Register">
               <span className="ml-2 text-white hover:text-green-500">
                 Register
               </span>

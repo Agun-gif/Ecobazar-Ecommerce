@@ -32,7 +32,7 @@ const ProfileSatting = () => {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              ProfileSettings
+              Profile Settings
             </span>
           </div>
         </div>

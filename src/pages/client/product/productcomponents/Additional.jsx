@@ -7,6 +7,7 @@ import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa";
 
 function Additional() {
   return (
@@ -27,11 +28,11 @@ function Additional() {
               <span className="ml-2 text-white hover:text-green-500">
                 Category
               </span>
-              <span className="ml-2">/</span>
+              <span className="ml-2"><FaAngleRight /></span>
               <span className="ml-2 text-white hover:text-green-500">
                 Vegetables
               </span>
-              <span className="ml-2">/</span>
+              <span className="ml-2"><FaAngleRight /></span>
               <span className="ml-2 text-white hover:text-green-500">
                 Chinese Cabbage
               </span>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaAngleRight } from "react-icons/fa";
 
 function Banner() {
   return (
@@ -18,7 +19,7 @@ function Banner() {
             <span className="ml-2 text-white hover:text-green-500">
               Blog
             </span>
-            <span className="ml-2">/</span>
+            <span className="ml-2"><FaAngleRight /></span>
             <span className="ml-2 text-white hover:text-green-500">
               Blog Details
             </span>

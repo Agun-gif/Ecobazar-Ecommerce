@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa6";
 import { SiPicsart } from "react-icons/si";
 import { CiInstagram } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { FaAngleRight } from "react-icons/fa";
 
 function Signin() {
   return (
@@ -27,11 +28,7 @@ function Signin() {
               </span>
             </a>
             <span className="ml-2">/</span>
-            <a href="Register">
-              <span className="ml-2 text-white hover:text-green-500">
-                Register
-              </span>
-            </a>
+            
           </div>
         </div>
 

@@ -21,7 +21,7 @@ const ShoppingCarts = () => {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              Shoppingcarts
+              Shopping Carts
             </span>
           </div>
         </div>

@@ -21,7 +21,7 @@ function OrderHistory() {
               &gt;
             </span>
             <span className="ml-2 text-white hover:text-green-500">
-              Orderhistory
+              Order History
             </span>
             
           </div>
